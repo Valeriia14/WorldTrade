@@ -30,9 +30,12 @@
             // Navbar Sticky 
             // ------------------------------------------------------------------------------ //
             var navSticky = getNav.hasClass("navbar-sticky");
+            var elements = document.getElementsByClassName("introduce");
             if( navSticky ){
                 // Wraped navigation
                 getNav.wrap("<div class='wrap-sticky'></div>");
+                // elements.css({ height: "0px" });
+                // document.getElementsByClassName("introduce").css({height:"90px"});
             }   
             
             // ------------------------------------------------------------------------------ //
@@ -481,12 +484,15 @@
         navbarSticky : function(){  
             var getNav = $("nav.navbar.bootsnav"),
                 navSticky = getNav.hasClass("navbar-sticky");
+            var elements = $("introduce");
             
             if( navSticky ){
                 
                 // Set Height Navigation
-                var getHeight = getNav.height();             
+                var getHeight = getNav.height();        
+                var getelementheight = elements.height();     
                 $(".wrap-sticky").height(getHeight);
+                $(".introduce").height(getelementheight);
                 
                 // Windown on scroll
                 var getOffset = $(".wrap-sticky").offset().top;
@@ -494,8 +500,15 @@
                     var scrollTop = $(window).scrollTop();
                     if(scrollTop > getOffset){
                         getNav.addClass("sticked");
+                        $(".introduce").addClass("position-fixed");
+                        $(".introduce").css("right", "0" );
+                        $(".introduce").css("z-index", "100" );
+                        // $(".introduce").css("position", "fixed" );
                     }else {
                         getNav.removeClass("sticked");
+                        $(".introduce").removeClass("position-fixed");
+                        // $(".introduce").css("height", "0px");
+                        $(".introduce").css("z-index", "-1" );
                     }
                 });
             }   

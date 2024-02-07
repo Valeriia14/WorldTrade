@@ -1619,6 +1619,14 @@ nav.navbar.bootsnav {
   transition: all 0.2s ease-in-out;
   top: 0;
 }
+.introduce .ss{
+  position: fixed;
+  height: 90px;
+}
+/* .introduce{
+  position:absolute;
+  height: 0px;
+} */
 
 @media (min-width: 1024px) and (max-width: 1400px) {
   body.wrap-nav-sidebar .wrapper .container {

@@ -637,7 +637,8 @@ input {
 
 .default-padding {
   /* padding-top: 120px; */
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
+  margin-bottom: 120px;
   position: relative;
 }
 
@@ -1220,6 +1221,7 @@ a.more-btn:hover {
 }
 
 /* Side BG */
+
 .side-bg {
   height: 100%;
   position: absolute;
@@ -1561,6 +1563,37 @@ a.more-btn:hover {
   font-weight: 600;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+/* ============================================================== 
+     # Introduce 
+=================================================================== */
+
+.introduce {
+  background: #f4f5f8;
+  padding: 40px;
+  position: fixed;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0px;
+  width: 300px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27),
+    0 0 40px rgba(0, 0, 0, 0.06) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27),
+    0 0 40px rgba(0, 0, 0, 0.06) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+}
+.introduce p {
+  color: #000000;
+}
+.introduce .icon i {
+  font-size: 20px;
+  color: #184897;
+}
+
+.introduce .info li {
+  margin-top: 10px;
 }
 
 /* ============================================================== 
@@ -3804,7 +3837,7 @@ ul.achivement li .medium {
 
 .services-area .fixed-shape {
   position: absolute;
-  right: -13%;
+  right: -1%;
   top: -250px;
   width: 400px;
   z-index: -1;
@@ -6214,10 +6247,10 @@ ul.achivement li .medium {
 
 .portfolio-area .item .thumb img {
   display: inline-block;
-  -moz-transform: scale(1.09, 1.09);
-  -ms-transform: scale(1.09, 1.09);
-  -webkit-transform: scale(1.09, 1.09);
-  transform: scale(1.09, 1.09);
+  -moz-transform: scale(0.991, 0.991);
+  -ms-transform: scale(0.991, 0.991);
+  -webkit-transform: scale(0.991, 0.991);
+  transform: scale(0.991, 0.991);
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
