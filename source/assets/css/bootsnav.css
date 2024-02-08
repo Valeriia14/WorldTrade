@@ -572,7 +572,7 @@ nav.navbar .navbar-brand {
 }
 
 nav.navbar.bootsnav.logo-less .navbar-brand {
-  display: none;
+  /* display: none; */
 }
 
 nav.navbar.navbar-default.logo-less .navbar-collapse {
@@ -647,7 +647,7 @@ nav.navbar.bootsnav ul.nav > li > a {
 }
 
 nav.navbar.bootsnav.bg-dark ul.nav > li > a {
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 nav.navbar.bootsnav ul.nav li.megamenu-fw > a:hover, 
@@ -1608,6 +1608,7 @@ nav.navbar.bootsnav {
   left: 0;
   top: 0;
   margin: 0;
+  background: white!important;
 }
 
 .wrap-sticky nav.navbar.bootsnav.sticked {
@@ -1779,7 +1780,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav.small-pad.logo-less ul.nav > li > a {
-    padding: 30px 15px !important;
+    /* padding: 30px 15px !important; */
   }
 
   nav.bootsnav.small-pad .attr-nav > ul > li {
@@ -1795,7 +1796,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav .navbar-brand {
-    padding: 20px 15px;
+    /* padding: 20px 15px; */
   }
 
   nav.navbar.bootsnav ul.nav > li.active > a {
